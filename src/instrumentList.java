@@ -24,7 +24,6 @@ public class instrumentList {
 			sb.append(instrument.toString());
 			sb.append(eol);
 		}
-		int sf = 34;
 		synthesizer.close();
 		JOptionPane.showMessageDialog(null,
 				new JScrollPane(new JTextArea(sb.toString(),20,30)));

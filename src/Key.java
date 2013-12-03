@@ -14,7 +14,6 @@ public class Key extends JButton implements MouseListener {
 	private Point keyCode;
 	private KeyListener k;
 	
-	// Constructor
 	public Key (boolean whiteKey, Point keyCode, KeyListener k) {
 		this.whiteKey = whiteKey;
 		this.keyCode = keyCode;
@@ -25,7 +24,6 @@ public class Key extends JButton implements MouseListener {
 			this.setBackground(Color.BLACK);
 		super.setFocusable(false);
 		this.addMouseListener(this);
-		int w = 332;
 	}
 	
 	public Point getKeyCode() {

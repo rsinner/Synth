@@ -37,13 +37,11 @@ public class KeyboardGUI extends JFrame {
 	private Synthesizer synth;
 	private S06PreferSelected select;
 	
-	// asfelkhg
 	public KeyboardGUI() throws FileNotFoundException, MidiUnavailableException, BadLocationException {
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		this.setSize(775,325);
 		this.setLayout(new FlowLayout());
 		this.setTitle("Synthesizer");
-		int x = 3;
 
 		keyboard = new ArrayList<Key>();
 		keys = new JLayeredPane();

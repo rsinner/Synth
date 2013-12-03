@@ -25,10 +25,8 @@ public class S06PreferSelected extends PlainDocument {
 	boolean hitBackspace;
 	boolean hitBackspaceOnSelection;
 
-	//sdaofje
 	public S06PreferSelected(final JComboBox comboBox) throws MidiUnavailableException, BadLocationException {
 		this.comboBox = comboBox;
-		int y = 3;
 		//instrumentSelection = new JComboBox();
 		//instrumentNames();
 		model = comboBox.getModel();

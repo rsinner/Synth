@@ -30,7 +30,6 @@ public class Synthesizer {
 	private boolean octave;
 	private ArrayList<Key> keys;
 	
-	//dalfekg
 	public Synthesizer() throws MidiUnavailableException {
 		keys = new ArrayList<Key>();
 		octave = false;
@@ -38,7 +37,6 @@ public class Synthesizer {
 		synth.open();
 		instr = synth.getAvailableInstruments();
 		mcd = synth.getChannels();
-			int x = 3;
 		keyListener = new synthKeyListener();
 		initializeNotes();
 		
